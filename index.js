@@ -9,7 +9,7 @@ module.exports = function(cb) {
   }
 
   var info = '', lang_part = '', lang = '';
-  if (os.platform() === 'windows') {
+  if (os.platform() === 'win32') {
     var sysinfo = spawn('systeminfo');
 
     sysinfo.stderr.on('err', function(err) {

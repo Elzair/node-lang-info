@@ -4,7 +4,7 @@ var assert = require('assert')
   ;
 
 describe('node-lang-info', function() {
-  if (os.platform() === 'windows') {
+  if (os.platform() === 'win32') {
     describe('windows', function() {
       it('should return the System Language', function(done) {
         nl(function(err, lang) {
