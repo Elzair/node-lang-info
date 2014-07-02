@@ -4,7 +4,8 @@
   "description": "module to retrieve current user's language",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pretest": "npm install",
+    "test": "./node_modules/mocha/bin/mocha test/unit/*.js"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Elzair/node-lang-info/issues"
   },
-  "homepage": "https://github.com/Elzair/node-lang-info"
+  "homepage": "https://github.com/Elzair/node-lang-info",
+  "devDependencies": {
+    "mocha": "^1.20.1"
+  }
 }
