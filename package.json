@@ -1,0 +1,22 @@
+{
+  "name": "node-lang-info",
+  "version": "0.0.1",
+  "description": "module to retrieve current user's language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Elzair/node-lang-info.git"
+  },
+  "keywords": [
+    "language"
+  ],
+  "author": "Philip Woods",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Elzair/node-lang-info/issues"
+  },
+  "homepage": "https://github.com/Elzair/node-lang-info"
+}
