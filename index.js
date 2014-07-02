@@ -24,7 +24,7 @@ module.exports = function(cb) {
       // Process systeminfo output
       var lines = s(info).lines();
       for (var i=0; i<lines.length; i++) {
-        var line = s(lines[i].split(':'));
+        var line = lines[i].split(':');
         if (line[0] === 'System Locale') {
           var lang_part = line[1].trim().split(';')[0].split('-');
           lang = lang_part[0] + '_' + lang_part[1].toUpperCase();

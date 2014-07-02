@@ -7,6 +7,7 @@ describe('node-lang-info', function() {
   if (os.platform() === 'win32') {
     describe('windows', function() {
       it('should return the System Language', function(done) {
+        this.timeout(10000);
         nl(function(err, lang) {
           assert.strictEqual(err, null);
           assert.ok(lang);
