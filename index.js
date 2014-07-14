@@ -27,7 +27,7 @@ module.exports = function(cb) {
         var line = lines[i].split(':');
         if (line[0] === 'System Locale') {
           var lang_part = line[1].trim().split(';')[0].split('-');
-          lang = lang_part[0] + '_' + lang_part[1].toUpperCase();
+          lang = lang_part[0].length === 2 ? lang_part[0] + '_' + lang_part[1].toUpperCase() : lang_part[0];
         }
       }
       cb(null, lang);
