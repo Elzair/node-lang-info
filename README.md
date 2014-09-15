@@ -8,7 +8,7 @@ Installation
 
 To install **node-lang-info** as a module into your project, type the following command.
 
-    npm install --save
+    npm install node-lang-info --save
 
 Usage
 -----
@@ -16,7 +16,7 @@ Usage
 Here is an example of how to use **node-lang-info** in your module
 
 ```javascript
-var lang_info = require('lang-info');
+var lang_info = require('node-lang-info');
 
 lang_info(function(err, lang) {
   if(err) {
