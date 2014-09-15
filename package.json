@@ -1,6 +1,6 @@
 {
   "name": "node-lang-info",
-  "version": "0.1.4",
+  "version": "0.1.6",
   "description": "module to retrieve current user's language",
   "main": "index.js",
   "scripts": {
