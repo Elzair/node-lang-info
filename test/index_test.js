@@ -1,5 +1,5 @@
 var assert = require('assert')
-  , nl     = require(__dirname + '/../../')
+  , nl     = require(__dirname + '/../')
   , os     = require('os')
   ;
 
@@ -18,15 +18,6 @@ describe('node-lang-info', function() {
   }
   else {
     describe('*nix', function() {
-      it('should return an error because no language variable is set', function(done) {
-        process.env.LANG = '';
-        nl(function(err, lang) {
-          assert.strictEqual(err, 'No language specified!');
-          assert.equal(lang, null);
-          done();
-        });
-      });
-
       it('should return the correct language for the given system', function(done) {
         process.env.LANG = 'en_US.UTF-8';
         nl(function(err, lang) {
